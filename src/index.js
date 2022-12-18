@@ -1,7 +1,7 @@
-import _ from 'lodash';
+// import _ from 'lodash';
 import './style.css';
 import { greeting } from './greeting.js';
 
-greeting ('Ben')
+greeting('Ben');
 
-document.querySelector('h1').innerHTML = 'Leaderboard Structure'
+document.querySelector('h1').innerHTML = 'Leaderboard Structure';
