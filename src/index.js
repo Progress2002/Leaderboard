@@ -4,4 +4,4 @@ import { greeting } from './greeting.js';
 
 greeting('Ben');
 
-document.querySelector('h1').innerHTML = 'Leaderboard Structure';
+
