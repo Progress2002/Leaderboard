@@ -34,6 +34,10 @@ h2 {
   width: 350px;
 }
 
+form h2 {
+  margin-bottom: 15px;
+}
+
 .container-title {
   display: flex;
   align-items: center;
@@ -60,10 +64,6 @@ li p {
 
 li:nth-child(even) {
   background-color: rgb(210, 207, 207);
-}
-
-form h2{
-  margin-bottom: 15px;
 }
 
 input {

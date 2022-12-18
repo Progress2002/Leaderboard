@@ -2,6 +2,4 @@
 import './style.css';
 import { greeting } from './greeting.js';
 
-greeting('Ben');
-
-
+console.log(greeting('Ben'));
