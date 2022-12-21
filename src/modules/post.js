@@ -1,13 +1,13 @@
-import URL from "./api-url.js";
+import URL from './api-url.js';
 
-const POST_SCORE = async (userInput) => await fetch (URL, {
+const POST_SCORE = async (userInput) => fetch(URL, {
   method: 'POST',
   headers: {
-    "content-type": "application/json",
+    'content-type': 'application/json',
   },
   body: JSON.stringify(userInput),
 })
-.then(response => response.json())
-.then(data => data.result)
+  .then((response) => response.json())
+  .then((data) => data.result);
 
 export default POST_SCORE;
