@@ -54,6 +54,7 @@ form h2 {
 
 li {
   display: flex;
+  justify-content: space-between;
   gap: 10px;
   padding: 5px;
 }
