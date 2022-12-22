@@ -187,13 +187,11 @@ button:hover {
 
   #main {
     width: 90%;
-    margin: auto;
+    margin: 50px auto auto;
     flex-direction: column;
-    /* margin-left: 70px; */
     display: flex;
     gap: 60px;
     justify-content: center;
-    margin-top: 70px;
   }
 
   .item {
@@ -208,6 +206,10 @@ button:hover {
     margin-left: 0px;
   }
 
+  ul {
+    max-height: 320px;
+  }
+
   li p {
     font-weight: 500;
     font-size: 20px;
@@ -218,13 +220,27 @@ button:hover {
     padding-left: 3px;
   }
 
+  form {
+    text-align: center;
+  }
+
   form h2 {
     text-align: center;
     font-size: 40px;
   }
 
+  input {
+    width: 300px;
+    font-size: 20px; 
+    box-shadow: 8px 8px 0px #490101;
+  }
+
+  input:hover::placeholder {
+    transform: none;
+  }
+
   .btn-submit {
-    text-align: center;
+    text-align: start;
   }
 
   button:hover {
