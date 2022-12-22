@@ -1,1 +1,32 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Wbpack Exercise</title><script defer="defer" src="main.js"></script></head><body><h1>Leaderboard Structure</h1></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta Name= "viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leaderboard</title>
+  <script defer src="main.js"></script></head>
+  <body>
+    <h1>Leaderboard</h1>
+    <main id="main">
+      <div class="item leaderboard-container">
+        <div class="container-title">
+          <h2>Recent scores</h2>
+          <div class="btn btn-refresh">
+            <button id="refresh">Refresh</button>
+          </div>
+        </div>
+        <ul class="score-container"></ul>
+      </div>
+      <div class="item form-container">
+        <form action="">
+          <h2>Add your score</h2>
+          <input type="text" id="name" name="name" placeholder="Your name" required/>
+          <input type="number" id="number" name="number" placeholder="Your score" required/>
+          <div class="btn btn-submit">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
