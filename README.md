@@ -204,7 +204,7 @@ I would like to thank Microvers for this awesome project idea.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](https://github.com/Progress2002/Leaderboard/blob/dev/MIT.md) licensed.
 
 
 
