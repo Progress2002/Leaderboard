@@ -165,16 +165,72 @@ button:hover {
     margin-top: 20px;
   }
 
-  h2 {
+  h1 {
+    font-size: 50px;
+  }
+
+  h1::before {
+    font-size: 70px;
+    margin-right: 3px;
+    display: block;
+  }
+
+  h1::after {
     font-size: 25px;
+    margin-left: 15px;
+  }
+
+  h2 {
+    font-size: 35px;
+    letter-spacing: 2px;
   }
 
   #main {
+    width: 90%;
+    margin: auto;
     flex-direction: column;
-    margin-left: 70px;
+    /* margin-left: 70px; */
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    margin-top: 70px;
   }
 
   .item {
-    width: 90%;
+    width: 100%;
   }
+
+  .item:nth-child(1) {
+    width: 100%;
+  }
+
+  .container-title h2 {
+    margin-left: 0px;
+  }
+
+  li p {
+    font-weight: 500;
+    font-size: 20px;
+    padding-right: 5px;
+  }
+
+  li p:nth-child(1) {
+    padding-left: 3px;
+  }
+
+  form h2 {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .btn-submit {
+    text-align: center;
+  }
+
+  button:hover {
+    background-color: #490101;
+    box-shadow: 5px 5px 0px darkgray;
+    color: #fff;
+  }
+  
 }
