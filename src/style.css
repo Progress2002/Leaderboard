@@ -25,7 +25,7 @@ h1 {
   text-align: center;
   font-size: 120px;
   font-family: 'Ceviche One', cursive, sans-serif;
-  text-shadow: 5px 0px 7px palevioletred;
+  text-shadow: 5px 0 7px palevioletred;
 }
 
 h1::before {
@@ -119,12 +119,12 @@ input {
   width: 100%;
   font-size: 25px;
   font-family: serif;
-  box-shadow: 10px 10px 0px #490101;
+  box-shadow: 10px 10px 0 #490101;
 }
 
-input[type="number"]::-webkit-outer-spin-button, 
+input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
+  -webkit-appearance: none;
 }
 
 ::placeholder {
@@ -146,7 +146,7 @@ button {
   letter-spacing: 1.5px;
   transition: all 0.5s ease;
   background-color: #490101;
-  box-shadow: 5px 5px 0px darkgray;
+  box-shadow: 5px 5px 0 darkgray;
   color: #fff;
   border: none;
   border-radius: 10px;
@@ -156,7 +156,7 @@ button {
 
 button:hover {
   color: #490101;
-  box-shadow: 5px 5px 0px #490101;
+  box-shadow: 5px 5px 0 #490101;
   background-color: darkgrey;
 }
 
@@ -202,8 +202,13 @@ button:hover {
     width: 100%;
   }
 
+  form h2 {
+    text-align: center;
+    font-size: 40px;
+  }
+
   .container-title h2 {
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   ul {
@@ -224,15 +229,10 @@ button:hover {
     text-align: center;
   }
 
-  form h2 {
-    text-align: center;
-    font-size: 40px;
-  }
-
   input {
     width: 300px;
-    font-size: 20px; 
-    box-shadow: 8px 8px 0px #490101;
+    font-size: 20px;
+    box-shadow: 8px 8px 0 #490101;
   }
 
   input:hover::placeholder {
@@ -245,8 +245,7 @@ button:hover {
 
   button:hover {
     background-color: #490101;
-    box-shadow: 5px 5px 0px darkgray;
+    box-shadow: 5px 5px 0 darkgray;
     color: #fff;
   }
-  
 }
