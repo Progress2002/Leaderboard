@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -6,32 +8,59 @@
 }
 
 body {
-  max-height: 100vh;
-  margin-top: 80px;
+  margin: 40px 0;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqNcLWDs5cWLS2WtRwfr9FXqd5RvaPoHBmJw&usqp=CAU');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 ul {
   list-style-type: none;
+  overflow-y: auto;
+  position: relative;
+  max-height: 350px;
 }
 
 h1 {
-  margin: 40px auto 40px 30px;
-  font-size: 40px;
+  text-align: center;
+  font-size: 120px;
+  font-family: 'Ceviche One', cursive, sans-serif;
+  text-shadow: 5px 0px 7px palevioletred;
+}
+
+h1::before {
+  content: "🏆";
+  font-size: 100px;
+  margin-right: 30px;
+}
+
+h1::after {
+  content: "🥇 🥈 🥉";
+  font-size: 65px;
+  margin-left: 30px;
 }
 
 h2 {
-  font-size: 25px;
+  font-size: 50px;
   padding: 0 10px 5px 0;
+  font-family: 'Ceviche One', cursive, sans-serif;
+  color: #490101;
+  letter-spacing: 5px;
 }
 
 #main {
   display: flex;
   gap: 60px;
-  margin-left: 80px;
+  justify-content: center;
+  margin-top: 70px;
 }
 
-.item {
-  width: 350px;
+.item:nth-child(1) {
+  width: 50%;
+}
+
+.leaderboard-container {
+  margin-right: 50px;
 }
 
 form h2 {
@@ -41,6 +70,7 @@ form h2 {
 .container-title {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .container-title h2 {
@@ -57,36 +87,77 @@ li {
   justify-content: space-between;
   gap: 10px;
   padding: 5px;
+  cursor: context-menu;
 }
 
 li p {
   font-weight: 700;
+  font-size: 25px;
+  color: #fff;
+  padding-right: 10px;
+  font-family: serif;
+}
+
+li p:nth-child(1) {
+  padding-left: 10px;
 }
 
 li:nth-child(even) {
-  background-color: rgb(210, 207, 207);
+  background-color: #490101;
 }
 
 input {
   display: block;
-  margin-bottom: 15px;
-  color: #000;
+  margin-bottom: 30px;
+  color: #fff;
   font-weight: bolder;
   padding: 6px;
   outline: none;
-  border: 2px solid rgb(111, 107, 107);
+  background: none;
+  border: none;
+  border: 2px solid #fff;
+  width: 100%;
+  font-size: 25px;
+  font-family: serif;
+  box-shadow: 10px 10px 0px #490101;
+}
+
+input[type="number"]::-webkit-outer-spin-button, 
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+::placeholder {
+  color: rgb(204, 201, 201);
+  transition: all 0.5s ease;
+}
+
+input:hover::placeholder {
+  transform: translateX(10px);
 }
 
 .btn-submit {
-  width: 195px;
   text-align: end;
 }
 
 button {
-  padding: 5px 12px;
-  font-weight: 700;
   cursor: pointer;
-  box-shadow: 5px 5px 5px rgb(56, 55, 55);
+  padding: 10px 15px;
+  letter-spacing: 1.5px;
+  transition: all 0.5s ease;
+  background-color: #490101;
+  box-shadow: 5px 5px 0px darkgray;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+button:hover {
+  color: #490101;
+  box-shadow: 5px 5px 0px #490101;
+  background-color: darkgrey;
 }
 
 @media (max-width: 768px) {
