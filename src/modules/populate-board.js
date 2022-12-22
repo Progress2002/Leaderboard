@@ -14,7 +14,7 @@ const POPULATE_BOARD = async () => {
       <p class="score">${element.score}</p>
     </li>
     `;
-    index++
+    index +=1;
   });
 };
 
